@@ -1,4 +1,4 @@
-# Maintainer: Your Name <yahiaoui0982@gmail.com>
+# Maintainer: yahia098 <yahiaoui0982@gmail.com>
 pkgname=apex-download-manager-bin
 pkgver=1.1.1
 pkgrel=1
