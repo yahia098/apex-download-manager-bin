@@ -6,13 +6,22 @@ pkgdesc="Free, open-source IDM alternative"
 arch=('x86_64')
 url="https://github.com/ThembaTman0/apex-download-manager"
 license=('GPL-3.0-or-later')
+
 depends=(
     'libayatana-appindicator'
     'webkit2gtk-4.1'
     'gtk3'
 )
+
+optdepends=(
+    'yt-dlp: video downloading'
+    'ffmpeg: merging video and audio streams'
+)
+
 makedepends=('dpkg')
-options=('strip' 'debug')
+
+options=('!strip' '!debug')
+
 source=("apex-${pkgver}.deb::https://apexdownloadmanager.com/dl?os=deb")
 noextract=("apex-${pkgver}.deb")
 sha256sums=('4d26ce592fd7c1bb5006256271ac5f0c6bc01fad14f3f11c96da74615fa2f31f')
