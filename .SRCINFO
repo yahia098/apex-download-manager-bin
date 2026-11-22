@@ -9,9 +9,11 @@ pkgbase = apex-download-manager-bin
 	depends = libayatana-appindicator
 	depends = webkit2gtk-4.1
 	depends = gtk3
+	optdepends = yt-dlp: video downloading
+	optdepends = ffmpeg: merging video and audio streams
 	noextract = apex-1.1.1.deb
-	options = strip
-	options = debug
+	options = !strip
+	options = !debug
 	source = apex-1.1.1.deb::https://apexdownloadmanager.com/dl?os=deb
 	sha256sums = 4d26ce592fd7c1bb5006256271ac5f0c6bc01fad14f3f11c96da74615fa2f31f
 
